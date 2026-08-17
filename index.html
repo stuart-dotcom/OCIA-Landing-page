@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCIA at St. James Catholic Church | Lake Placid, FL</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --primary-blue: #003366;
+            --accent-gold: #D4AF37;
+            --light-bg: #F8F9FA;
+            --text-dark: #333333;
+            --text-light: #FFFFFF;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+        }
+
+        h1, h2, h3 {
+            color: var(--primary-blue);
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: var(--accent-gold);
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-gold);
+            color: var(--primary-blue);
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #bfa136;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary-blue);
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: var(--text-light);
+            margin: 0 15px;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('https://via.placeholder.com/1200x600?text=Hero+Image+-+Church+Interior+or+Welcoming+Community') no-repeat center center/cover;
+            color: var(--text-light);
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            color: var(--accent-gold);
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+        }
+
+        /* Section Layouts */
+        .section {
+            padding: 60px 0;
+        }
+
+        .bg-light {
+            background-color: var(--light-bg);
+        }
+
+        .split-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .split-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .split-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+
+        .split-image img {
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* Callout Box (Schedule) */
+        .schedule-box {
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 5px solid var(--accent-gold);
+        }
+
+        .schedule-box h3 {
+            color: var(--accent-gold);
+            margin-top: 0;
+        }
+
+        /* Form Section */
+        .form-container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        footer h3 {
+            color: var(--accent-gold);
+        }
+
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .footer-col {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+            .split-content {
+                flex-direction: column;
+            }
+            .footer-grid {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav>
+        <a href="https://www.stjameschurchlp.com/Mass-Schedule" target="_blank">Mass Schedule</a>
+        <a href="https://www.stjameschurchlp.com/publications" target="_blank">Bulletins</a>
+        <a href="https://www.stjameschurchlp.com/blog/pastor-s-messages" target="_blank">Pastor's Message</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>Curious About the Catholic Faith?</h1>
+            <p>Whether you are looking to be baptized, coming from another Christian tradition, or seeking to complete your Catholic Sacraments, St. James Catholic Church welcomes you to explore the faith with us.</p>
+            <a href="#inquiry-form" class="btn">Inquire About OCIA</a>
+        </div>
+    </header>
+
+    <!-- What is OCIA Section -->
+    <section class="section">
+        <div class="container split-content">
+            <div class="split-text">
+                <h2>A Journey of Faith and Discovery</h2>
+                <p>The Order of Christian Initiation of Adults (OCIA) is a process designed for adults who, after hearing the mystery of Christ proclaimed, consciously and freely seek the living God.</p>
+                <p>This isn't just a class—it's a spiritual journey. We provide a welcoming, zero-pressure environment to ask questions, learn about Catholic teachings, and grow in a relationship with Jesus Christ alongside members of our parish community.</p>
+                <ul>
+                    <li><strong>No pressure:</strong> Inquiring does not commit you to becoming Catholic.</li>
+                    <li><strong>Open to all:</strong> Unbaptized, baptized Christians, and adult Catholics needing Confirmation.</li>
+                    <li><strong>Community-focused:</strong> Walk this journey with supportive sponsors and team members.</li>
+                </ul>
+            </div>
+            <div class="split-image">
+                <!-- PLACEHOLDER 2 -->
+                <img src="https://via.placeholder.com/500x350?text=Image+-+RCIA/OCIA+Group+or+Candles" alt="OCIA Group Discussion Placeholder">
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule & Details Section -->
+    <section class="section bg-light">
+        <div class="container split-content">
+            <div class="split-image" style="order: -1;">
+                <!-- PLACEHOLDER 3 -->
+                <img src="https://via.placeholder.com/500x350?text=Image+-+St.+James+Social+Hall+or+Bible" alt="St James Parish Hall Placeholder">
+            </div>
+            <div class="split-text">
+                <h2>When Do We Meet?</h2>
+                <p>Our sessions are structured to comfortably fit into your busy schedule while providing the depth and reflection necessary for this spiritual journey.</p>
+                
+                <div class="schedule-box">
+                    <h3>2024–2025 Schedule</h3>
+                    <p><strong>Start Date:</strong> Classes begin in September</p>
+                    <p><strong>End Date:</strong> Concludes on the Vigil of Pentecost</p>
+                    <p><strong>When:</strong> Every Monday at 6:00 PM</p>
+                    <p><strong>Where:</strong> St. James Social Hall</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lead Capture Form Section -->
+    <section id="inquiry-form" class="section">
+        <div class="container">
+            <div class="form-container">
+                <h2 style="text-align: center;">Take the First Step</h2>
+                <p style="text-align: center; margin-bottom: 30px;">Fill out the form below, and our OCIA team will reach out to you to answer your questions and provide more information.</p>
+                
+                <!-- Note: The 'action' attribute will need to point to your form handler (like Formspree or a PHP script) -->
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">First and Last Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="johndoe@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(863) 555-0123">
+                    </div>
+                    <div class="form-group">
+                        <label for="background">Where are you in your faith journey? (Optional)</label>
+                        <select id="background" name="background">
+                            <option value="">Please select an option...</option>
+                            <option value="unbaptized">I have never been baptized.</option>
+                            <option value="baptized_other">I was baptized in another Christian faith.</option>
+                            <option value="baptized_catholic">I am a baptized Catholic needing Communion/Confirmation.</option>
+                            <option value="just_curious">I'm just curious and have questions.</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Send My Inquiry</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h3>St. James Catholic Church</h3>
+                <p>3380 Placid View Dr.<br>Lake Placid, FL 33852</p>
+                <p><strong>Phone:</strong> <a href="tel:8634653215" style="color: var(--accent-gold);">(863) 465-3215</a></p>
+            </div>
+            <div class="footer-col">
+                <h3>Parish Office Hours</h3>
+                <p><strong>Mon, Tue, Thu, Fri:</strong><br>
+                9:00 am – 12:00 pm<br>
+                12:30 pm – 3:00 pm</p>
+                <p><strong>Wednesday:</strong><br>
+                9:00 am – 12:00 pm</p>
+            </div>
+        </div>
+        <div style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px;">
+            <p>&copy; 2024 St. James Catholic Church. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
