@@ -80,8 +80,11 @@
 
         /* Hero Section */
         .hero {
-            /* FIXED: Updated folder path to Images/ */
-            background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url('Images/OCIA-Banner-Lake-Placid-St.%20James-Catholic.png') no-repeat center center/cover;
+            /* Use explicit background properties to avoid shorthand parsing issues */
+            background-image: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url("Images/OCIA-Banner-Lake-Placid-St. James-Catholic.png");
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
             color: var(--text-light);
             text-align: center;
             padding: 100px 20px;
@@ -229,7 +232,7 @@
     <header class="hero">
         <div class="container">
             <h1>Curious About the Catholic Faith?</h1>
-            <p>Whether you are looking to be baptized, coming from another Christian tradition, or seeking to complete your Catholic Sacraments, St. James Catholic Church welcomes you to explore the faith with us.</p>
+            <p>Whether you are looking to be baptized, coming from another Christian tradition, or seeking to complete your Catholic Sacraments, St. James Catholic Church welcomes you to explore the faith and join our community.</p>
             <a href="#inquiry-form" class="btn">Inquire About OCIA</a>
         </div>
     </header>
@@ -240,7 +243,7 @@
             <div class="split-text">
                 <h2>A Journey of Faith and Discovery</h2>
                 <p>The Order of Christian Initiation of Adults (OCIA) is a process designed for adults who, after hearing the mystery of Christ proclaimed, consciously and freely seek the living God.</p>
-                <p>This isn't just a class—it's a spiritual journey. We provide a welcoming, zero-pressure environment to ask questions, learn about Catholic teachings, and grow in a relationship with Jesus Christ alongside members of our parish community.</p>
+                <p>This isn't just a class—it's a spiritual journey. We provide a welcoming, zero-pressure environment to ask questions, learn about Catholic teachings, and grow in a relationship with Christ.</p>
                 <ul>
                     <li><strong>No pressure:</strong> Inquiring does not commit you to becoming Catholic.</li>
                     <li><strong>Open to all:</strong> Unbaptized, baptized Christians, and adult Catholics needing Confirmation.</li>
@@ -248,8 +251,7 @@
                 </ul>
             </div>
             <div class="split-image">
-                <!-- FIXED: Updated folder path to Images/ -->
-                <img src="Images/St%20James-Church-Altar-Lake%20Placid.jpg" alt="St. James Church Altar Lake Placid">
+                <img src="Images/St James-Church-Altar-Lake Placid.jpg" alt="St. James Church Altar Lake Placid">
             </div>
         </div>
     </section>
@@ -258,8 +260,7 @@
     <section class="section bg-light">
         <div class="container split-content">
             <div class="split-image" style="order: -1;">
-                <!-- FIXED: Updated folder path to Images/ -->
-                <img src="Images/St.%20James-Church-Jesus-Baptism.jpg" alt="Jesus Baptism Art St. James Church">
+                <img src="Images/St. James-Church-Jesus-Baptism.jpg" alt="Jesus Baptism Art St. James Church">
             </div>
             <div class="split-text">
                 <h2>When Do We Meet?</h2>
@@ -315,8 +316,7 @@
     <!-- End of Page Image Section -->
     <section class="section bg-light" style="padding-top: 20px;">
         <div class="container" style="text-align: center;">
-            <!-- FIXED: Updated folder path to Images/ -->
-            <img src="Images/St.%20James-Church-Lake%20Placid-Outside.jpg" alt="Exterior of St. James Church Lake Placid" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+            <img src="Images/St. James-Church-Lake Placid-Outside.jpg" alt="Exterior of St. James Church Lake Placid" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         </div>
     </section>
 
