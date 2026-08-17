@@ -278,37 +278,26 @@
     </section>
 
     <!-- Lead Capture Form Section -->
+ <!-- Lead Capture Form Section -->
     <section id="inquiry-form" class="section">
         <div class="container">
-            <div class="form-container">
-                <h2 style="text-align: center;">Take the First Step</h2>
-                <p style="text-align: center; margin-bottom: 30px;">Fill out the form below, and our OCIA team will reach out to you to answer your questions and provide more information.</p>
+            <div class="form-container" style="padding: 20px; text-align: center;">
+                <h2>Take the First Step</h2>
+                <p style="margin-bottom: 30px;">Fill out the form below, and our OCIA team will reach out to you to answer your questions and provide more information.</p>
                 
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">First and Last Name</label>
-                        <input type="text" id="name" name="name" required placeholder="John Doe">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required placeholder="johndoe@example.com">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="(863) 555-0123">
-                    </div>
-                    <div class="form-group">
-                        <label for="background">Where are you in your faith journey? (Optional)</label>
-                        <select id="background" name="background">
-                            <option value="">Please select an option...</option>
-                            <option value="unbaptized">I have never been baptized.</option>
-                            <option value="baptized_other">I was baptized in another Christian faith.</option>
-                            <option value="baptized_catholic">I am a baptized Catholic needing Communion/Confirmation.</option>
-                            <option value="just_curious">I'm just curious and have questions.</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn" style="width: 100%; margin-top: 10px;">Send My Inquiry</button>
-                </form>
+                <!-- Google Form Embed -->
+                <div class="google-form-wrapper" style="position: relative; overflow: hidden; width: 100%; height: 800px;">
+                    <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSf7AHPPM68UWuy_G0Sbl29NkBYsShmDCrALb2y_rR5pN7u7jA/viewform?embedded=true" 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0"
+                        style="position: absolute; top: 0; left: 0; bottom: 0; right: 0;">
+                        Loading…
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>
