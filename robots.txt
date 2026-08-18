@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stjames-ocia-lakeplacid-fl.com/sitemap.xmldomain.com/sitemap.xml
+Sitemap: https://stjames-ocia-lakeplacid-fl.com/sitemap.xml
