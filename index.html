@@ -2,24 +2,37 @@
 <html lang="en">
 <head>
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YNT6R2M2E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YNT6R2M2E"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'G-4YNT6R2M2E');
-</script>
+      gtag('config', 'G-4YNT6R2M2E');
+    </script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OCIA at St. James Catholic Church | Lake Placid, FL</title>
-    <!-- Schema Markup for Local SEO -->
+    
+    <!-- On-Site SEO Title & Meta Description -->
+    <title>RCIA / OCIA Program Lake Placid, FL | St. James Catholic Church</title>
+    <meta name="description" content="Explore the Catholic faith through the OCIA (formerly RCIA) program at St. James Catholic Church in Lake Placid, FL. Welcoming seekers across Highlands County, Sebring, and Venus.">
+    <link rel="canonical" href="https://stjames-ocia-lakeplacid-fl.com/">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="RCIA / OCIA Program Lake Placid, FL | St. James Catholic Church">
+    <meta property="og:description" content="Explore the Catholic faith in a welcoming, zero-pressure environment. Join our OCIA/RCIA sessions at St. James Catholic Church in Lake Placid, FL.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://stjames-ocia-lakeplacid-fl.com/">
+    <meta property="og:image" content="https://raw.githubusercontent.com/YourUsername/YourRepo/main/Images/OCIA-Banner-Lake-Placid-St.%20James-Catholic.png">
+
+    <!-- Technical SEO: Local Business / Catholic Church Schema Markup -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "CatholicChurch",
       "name": "St. James Catholic Church",
-      "description": "Explore the Catholic faith through the Order of Christian Initiation of Adults (OCIA)—formerly known as RCIA—is a process designed at St. James Catholic Church in Lake Placid, FL.",
+      "description": "Explore the Catholic faith through the Order of Christian Initiation of Adults (OCIA)—formerly known as RCIA—at St. James Catholic Church in Lake Placid, FL.",
       "image": "https://raw.githubusercontent.com/YourUsername/YourRepo/main/Images/OCIA-Banner-Lake-Placid-St.%20James-Catholic.png",
       "address": {
         "@type": "PostalAddress",
@@ -30,9 +43,61 @@
         "addressCountry": "US"
       },
       "telephone": "+1-863-465-3215",
-      "url": "https://www.stjameschurchlp.com/"
+      "url": "https://stjames-ocia-lakeplacid-fl.com/",
+      "areaServed": ["Lake Placid", "Sebring", "Venus", "Highlands County"]
     }
     </script>
+
+    <!-- Technical SEO: FAQ Page Schema Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the difference between OCIA and RCIA?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You will often hear these terms used interchangeably! RCIA stands for the Rite of Christian Initiation of Adults. The Catholic Church recently updated the translation to OCIA, which stands for the Order of Christian Initiation of Adults. It is the exact same process and journey of faith."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do I have to commit to becoming Catholic to attend?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not at all. The initial phase of OCIA is called the Inquiry phase. It is a zero-pressure time to ask questions, learn about Catholic teachings, and discern if God is calling you to the Church."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I have already been baptized in another Christian denomination?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We welcome you! Many people who join our Lake Placid OCIA program come from other Christian traditions. Because the Catholic Church recognizes all valid Christian baptisms, you will not need to be re-baptized; instead, you will prepare to receive Confirmation and Holy Communion."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does the OCIA program cost?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "There is absolutely no cost to participate in OCIA at St. James Catholic Church. All materials and books are provided for you."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if my schedule makes it hard to attend Monday night classes?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We understand that life is busy. If you have a strong desire to explore the Catholic faith but have a schedule conflict, please reach out to us using our contact form. We are happy to discuss how we can accommodate your spiritual journey."
+          }
+        }
+      ]
+    }
+    </script>
+
     <style>
         /* Base Styles */
         :root {
@@ -109,8 +174,7 @@
 
         /* Hero Section */
         .hero {
-            /* Use explicit background properties to avoid shorthand parsing issues */
-            background-image: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url("Images/OCIA-Banner-Lake-Placid-St. James-Catholic.png");
+            background-image: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), url("Images/OCIA-Banner-Lake-Placid-St.%20James-Catholic.png");
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
@@ -179,6 +243,34 @@
             margin-top: 0;
         }
 
+        /* FAQ Section Styles */
+        .faq-grid {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .faq-item {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid var(--primary-blue);
+            border-radius: 6px;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+        }
+
+        .faq-item h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .faq-item p {
+            margin: 0;
+            color: #4a5568;
+        }
+
         /* Form Section */
         .form-container {
             background: #fff;
@@ -187,24 +279,6 @@
             box-shadow: 0 4px 15px rgba(0,0,0,0.05);
             max-width: 600px;
             margin: 0 auto;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        .form-group input, .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-family: inherit;
         }
 
         /* Footer */
@@ -255,13 +329,15 @@
         <a href="https://www.stjameschurchlp.com/Mass-Schedule" target="_blank">Mass Schedule</a>
         <a href="https://www.stjameschurchlp.com/publications" target="_blank">Bulletins</a>
         <a href="https://www.stjameschurchlp.com/blog/pastor-s-messages" target="_blank">Pastor's Message</a>
+        <a href="#faq">FAQ</a>
+        <a href="#inquiry-form">Inquire</a>
     </nav>
 
     <!-- Hero Section -->
     <header class="hero">
         <div class="container">
             <h1>Curious About the Catholic Faith? Join our OCIA / RCIA Program in Lake Placid, FL</h1>
-            <p>Whether you are looking to become Catholic, are coming from another Christian tradition, or are an adult seeking to complete your Catholic Confirmation, St. James Catholic Church in Lake Placid Florida welcomes you to explore the faith and join our community.</p>
+            <p>Whether you are looking to become Catholic, are coming from another Christian tradition, or are an adult seeking to complete your Catholic Confirmation, St. James Catholic Church in Lake Placid, Florida welcomes you to explore the faith and join our community.</p>
             <a href="#inquiry-form" class="btn">Inquire About OCIA</a>
         </div>
     </header>
@@ -270,13 +346,13 @@
     <section class="section">
         <div class="container split-content">
             <div class="split-text">
-                <h2>A Journey of Faith and Discovery</h2>
-                <p>The Order of Christian Initiation of Adults (OCIA) formerly RCIA is a process designed for adults who, after hearing the mystery of Christ proclaimed, consciously and freely seek the living God.</p>
-                <p>This isn't just a class—it's a spiritual journey. We provide a welcoming, zero-pressure environment to ask questions, learn about Catholic teachings, and grow in a relationship with Christ.</p>
+                <h2>A Journey of Faith and Discovery in Highlands County</h2>
+                <p>The <strong>Order of Christian Initiation of Adults (OCIA)</strong>—formerly known as <strong>RCIA</strong>—is a process designed for adults who, after hearing the mystery of Christ proclaimed, consciously and freely seek the living God. We warmly welcome seekers from Lake Placid, Sebring, Venus, and surrounding communities.</p>
+                <p>This isn't just a traditional classroom lecture; it's a supportive spiritual journey. We provide a welcoming, zero-pressure environment to ask real questions, learn about Catholic teachings, and grow in a personal relationship with Christ.</p>
                 <ul>
-                    <li><strong>No pressure:</strong> Inquiring does not commit you to becoming Catholic.</li>
-                    <li><strong>Open to all:</strong> Unbaptized, baptized Christians, and adult Catholics needing Confirmation.</li>
-                    <li><strong>Community-focused:</strong> Walk this journey with supportive sponsors and team members.</li>
+                    <li><strong>No pressure:</strong> Inquiring or attending does not obligate you to become Catholic.</li>
+                    <li><strong>Open to all:</strong> Unbaptized adults, baptized Christians, and adult Catholics needing Confirmation.</li>
+                    <li><strong>Community-focused:</strong> Walk this journey with supportive sponsors, mentors, and team members.</li>
                 </ul>
             </div>
             <div class="split-image">
@@ -293,29 +369,63 @@
             </div>
             <div class="split-text">
                 <h2>Lake Placid OCIA Class Schedule</h2>
-                <p>Our sessions are structured to comfortably fit into your busy schedule while providing the depth and reflection necessary for this spiritual journey.</p>
+                <p>Our weekly sessions are structured to comfortably fit into your busy schedule while providing the depth and reflection necessary for this spiritual journey.</p>
                 
                 <div class="schedule-box">
                     <h3>2026–2027 Schedule</h3>
                     <p><strong>Start Date:</strong> Classes begin in September</p>
                     <p><strong>End Date:</strong> Concludes on the Vigil of Pentecost</p>
                     <p><strong>When:</strong> Every Monday at 6:00 PM</p>
-                    <p><strong>Where:</strong> St. James Social Hall</p>
+                    <p><strong>Where:</strong> St. James Social Hall (3380 Placid View Dr., Lake Placid, FL)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 style="text-align: center;">Frequently Asked Questions about OCIA / RCIA</h2>
+            <p style="text-align: center; max-width: 700px; margin: 0 auto 30px auto;">Have questions about joining the Catholic Church or attending our sessions? Here are answers to the most common questions we receive.</p>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>What is the difference between OCIA and RCIA?</h3>
+                    <p>You will often hear these terms used interchangeably! RCIA stands for the <em>Rite of Christian Initiation of Adults</em>. The Catholic Church recently updated the official English translation to OCIA, which stands for the <em>Order of Christian Initiation of Adults</em>. It is the exact same process and journey of faith.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Do I have to commit to becoming Catholic to attend?</h3>
+                    <p>Not at all. The initial phase of OCIA is called the "Inquiry" phase. It is a zero-pressure time to ask questions, learn about Catholic teachings, and discern if God is calling you to the Church.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What if I have already been baptized in another Christian denomination?</h3>
+                    <p>We welcome you! Many people who join our Lake Placid OCIA program come from other Christian traditions. Because the Catholic Church recognizes all valid Christian baptisms, you will not need to be re-baptized; instead, you will prepare to receive Confirmation and Holy Communion.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How much does the OCIA program cost?</h3>
+                    <p>There is absolutely no cost to participate in OCIA at St. James Catholic Church. All materials, books, and resources are provided for you free of charge.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What if my schedule makes it hard to attend Monday night classes?</h3>
+                    <p>We understand that life is busy. If you have a strong desire to explore the Catholic faith but have an unavoidable schedule conflict, please reach out to us using the form below. We are happy to discuss options to accommodate your journey.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Lead Capture Form Section -->
- <!-- Lead Capture Form Section -->
-    <section id="inquiry-form" class="section">
+    <section id="inquiry-form" class="section bg-light">
         <div class="container">
             <div class="form-container" style="padding: 20px; text-align: center;">
                 <h2>Take the First Step</h2>
                 <p style="margin-bottom: 30px;">Fill out the secure form below. Our OCIA Director will reach out within 48 hours to answer your questions—no commitments required.</p>
                 
-                <!-- Google Form Embed -->
-                <div class="google-form-wrapper" style="position: relative; overflow: hidden; width: 100%; height: 800px;">
+                <!-- Google Form Embed with Fixed Container preventing CLS -->
+                <div class="google-form-wrapper" style="position: relative; overflow: hidden; width: 100%; height: 800px; min-height: 800px;">
                     <iframe 
                         src="https://docs.google.com/forms/d/e/1FAIpQLSf7AHPPM68UWuy_G0Sbl29NkBYsShmDCrALb2y_rR5pN7u7jA/viewform?embedded=true" 
                         width="100%" 
@@ -323,6 +433,7 @@
                         frameborder="0" 
                         marginheight="0" 
                         marginwidth="0"
+                        title="OCIA Inquiry Form"
                         style="position: absolute; top: 0; left: 0; bottom: 0; right: 0;">
                         Loading…
                     </iframe>
@@ -332,7 +443,7 @@
     </section>
     
     <!-- End of Page Image Section -->
-    <section class="section bg-light" style="padding-top: 20px;">
+    <section class="section" style="padding-top: 20px;">
         <div class="container" style="text-align: center;">
             <img src="Images/St. James-Church-Lake Placid-Outside.jpg" alt="Exterior of St. James Church Lake Placid" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
         </div>
@@ -344,7 +455,7 @@
             <div class="footer-col">
                 <h3>St. James Catholic Church</h3>
                 <p>3380 Placid View Dr.<br>Lake Placid, FL 33852</p>
-                <p><strong>Phone:</strong> <a href="tel:8634653215" style="color: var(--accent-gold);">(863) 465-3215</a></p>
+                <p><strong>Phone:</strong> <a href="tel:18634653215" style="color: var(--accent-gold);">(863) 465-3215</a></p>
             </div>
             <div class="footer-col">
                 <h3>Parish Office Hours</h3>
@@ -356,7 +467,7 @@
             </div>
         </div>
         <div style="margin-top: 40px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px;">
-            <p>&copy; 2024 St. James Catholic Church. All rights reserved.</p>
+            <p>&copy; 2026 St. James Catholic Church. All rights reserved.</p>
         </div>
     </footer>
 
